@@ -1,5 +1,6 @@
-use bevy::prelude::*;
+mod testcode;
 
 fn main() {
-    App::new().run();
+//    testcode::load_font::main();
+
 }
