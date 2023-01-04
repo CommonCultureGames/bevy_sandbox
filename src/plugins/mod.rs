@@ -1,7 +1,6 @@
 mod splash_screen_plugin;
+mod window_descripter_plugin;
 use bevy::{prelude::*, app::PluginGroupBuilder};
-
-
 
 pub struct BevyTopDownRPGCorePlugins;
 
@@ -10,6 +9,10 @@ impl PluginGroup for BevyTopDownRPGCorePlugins {
         // Create the Plugin Group Builder
         let mut group = PluginGroupBuilder::start::<Self>();
         group = group
+
+        // Add the BevyTopDownRPGCorePlugins
+
+        .add(window_descripter_plugin::WindowDescripterPlugin)
         // Add the basic plugins    
         .add(bevy::log::LogPlugin::default())
         .add(bevy::core::CorePlugin::default())
@@ -96,7 +99,6 @@ impl PluginGroup for BevyTopDownRPGCorePlugins {
         {
             group = group.add(bevy::animation::AnimationPlugin::default());
         }
-
         group
     }
 }
