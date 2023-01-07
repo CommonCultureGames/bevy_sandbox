@@ -1,9 +1,9 @@
-use bevy::prelude::{Plugin, App};
+// use bevy::prelude::{Plugin, App};
 
-pub struct SplashScreenPlugin;
+// pub struct SplashScreenPlugin;
 
-impl Plugin for SplashScreenPlugin {
-    fn build(&self, app: &mut App) {
+// impl Plugin for SplashScreenPlugin {
+//     fn build(&self, app: &mut App) {
         
-    }
-}
+//     }
+// }
